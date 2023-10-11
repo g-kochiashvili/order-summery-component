@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E8FF;
+}
+
+.card {
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+.content {
+    display: flex;
+    padding: 48px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #1F2E55;
+    font-size: 28px;
+}
+
+.text {
+    color: #717FA6;
+    font-size: 16px;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 26px;
+    /* font-weight: 500; */
+}
+
+.AnualPlan {
+    background-color: #F7F9FF;
+    width: 100%;
+    height: 98px;
+    border-radius: 20px;
+    margin-top: 19px;
+    display: flex;
+    padding: 25px 24px;
+}
+
+.annual {
+    display: flex;
+    align-items: center;
+}
+
+.annual img {
+    width: 48px;
+    height: 48px;
+    /* flex-shrink: 0; */
+}
+
+.price {
+    width: 92px;
+    /* height: 48px; */
+    margin-left: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.anualplan {
+    color: #1F2E55;
+    font-weight: bold;
+}
+
+.cost {
+    color: #717FA6;
+}
+
+.change {
+    font-size: 14px;
+    font-weight: bold;
+    color: #382AE1;
+    margin-left: 94px;
+    margin-top: 15px;
+}
+
+.button-payment {
+    margin-top: 32px;
+    width: 354px;
+    height: 50px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #382AE1;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.cancel {
+    margin-top: 32px;
+    font-size: 15px;
+    color: #717FA6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.change:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.button-payment:hover {
+    background-color: #766CF1;
+}
+
+.cancel:hover {
+    color: #1F2E55;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1440px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        background: #E0E8FF;
+    }
+    .dancerGirl{
+        height: 160px;
+    }
+
+    .card {
+        width: 327px;
+        height: 567px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    }
+
+    .content {
+        padding: 32px 24px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 16px;
+    }
+
+    .AnualPlan {
+        margin-top: 24px;
+        padding: 17px 16px 16px 16px;
+        width: 279px;
+        height: 81px;
+        flex-shrink: 0;
+        border-radius: 11px;
+    }
+
+    .annual {
+        width: 247px; 
+    }
+
+    .price {
+        width: 88.662px;
+        margin: 4px 42px 3px 20px;
+        font-size: 14px;
+    }
+
+    .change {
+        margin-left: 0px;
+        font-size: 13px;
+        margin-top: 16px;
+    }
+
+    .button-payment {
+        margin-top: 24px;
+        width: 279px;
+        border-radius: 11px;
+        background: #382AE1;
+        box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    }
+
+    .cancel{
+        margin-top: 24px;
+
+    }
+
+
+}
